@@ -8,7 +8,6 @@ client_script {
     '@PolyZone/ComboZone.lua',
     "config.lua",
     "client/main.lua",
-	"client/walks.lua",
 	"client/vehicle.lua"
 }
 
