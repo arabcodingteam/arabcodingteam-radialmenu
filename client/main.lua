@@ -27,9 +27,6 @@ Citizen.CreateThread(function()
                         local previousMenu = dataElements
                         local currentElement = {}
                         for i = 1, #menuConfig.subMenus do
-                            -- if newSubMenus[menuConfig.subMenus[i]] ~= nil and newSubMenus[menuConfig.subMenus[i]].enableMenu ~= nil and not newSubMenus[menuConfig.subMenus[i]]:enableMenu() then
-                            --     goto continue
-                            -- end
                             currentElement[#currentElement+1] = newSubMenus[menuConfig.subMenus[i]]
                             currentElement[#currentElement].id = menuConfig.subMenus[i]
                             currentElement[#currentElement].enableMenu = nil

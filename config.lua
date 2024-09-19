@@ -16,19 +16,6 @@ rootMenuConfig =  {
         subMenus = {"general:givenum"}
     },
     {
-        id = "general:walk",
-        displayName = "Walking Style",
-        icon = "#walking",
-        functionName = "qb-walks:menu",
-        enableMenu = function()
-            local src = source
-            local Player = QBCore.Functions.GetPlayerData(src)
-            local inlaststand = Player.metadata["inlaststand"]
-            local isdead = Player.metadata["isdead"]
-            return not isdead and not inlaststand and not IsPedInAnyVehicle(PlayerPedId(), true)
-        end
-    },
-    {
         id = "House",
         displayName = "House",
         icon = "#globe-house",
